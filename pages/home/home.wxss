@@ -1,0 +1,121 @@
+/* 搜索栏样式 */
+.search{
+    display: flex;
+    flex-direction: row;
+    height: 75rpx;
+    margin: 18.75rpx; 
+    border: 1rpx solid #efefef;
+    border-radius: 28rpx;
+    box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.ipt{
+    padding: 15rpx 20rpx;
+    width: 80%;
+    height: 40rpx;
+
+}
+
+.searchButton image{
+    height: 60rpx;
+    width: 60rpx;
+    margin: 7rpx;
+}
+
+.searchRes{
+    margin: 2.5%;
+    padding: 15rpx 20rpx;
+    margin-top: -18rpx;
+    border: 1rpx solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 8rpx;
+    border-bottom-right-radius: 8rpx;
+}
+
+/* 轮播图样式 */
+.swiper-container{
+    height: 200px;
+    /* margin: 0 2.5%;  */
+    /* border: 1rpx solid #efefef; */
+    /* border-radius: 28rpx; */
+    /* box-shadow: 1rpx 1rpx 15rpx #ddd; */
+}
+.item{
+    height: 100%;
+    line-height: 150px;
+    text-align: center;
+}
+swiper image{
+    width: 97%;
+    height: 100%;
+    border-radius: 28rpx;
+}
+
+/* 分类滑块样式 */
+.major{
+    margin: 20rpx 2.5%; 
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 28rpx;
+    box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+.majorCon{
+    display: flex;
+    flex-direction: row;
+}
+.major .pic{
+    width: 90rpx;
+    height: 90rpx;
+}
+.major .box{
+    text-align: center;
+    padding: 20rpx 26rpx;
+    width: 100rpx;
+
+}
+.major .txt{
+    font-size: 23rpx;
+}
+
+/* 卡片样式 */
+.c-item{
+    margin: 2.5%; 
+    padding: 15rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 28rpx;
+    box-shadow: 1rpx 1rpx 15rpx #ddd; 
+    display: flex;
+    flex-direction: row;
+}
+
+.c-images image{
+    width: 150rpx;
+    height: 150rpx;
+    display: block;
+    border-radius: 8rpx;
+    border: 1rpx solid #fefefe;
+}
+
+.info{
+    justify-content: space-around;
+    margin-left: 15rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewTitle{
+    display: block;
+    font-size: 38rpx;
+    color: #3F51B5;
+    margin-left: 10rpx;
+    margin-bottom: 10rpx;
+  }
+
+  .viewDis{
+    display: inline-block;
+    font-size: 26rpx;
+    color: gray;
+    margin-left: 10rpx;
+  }

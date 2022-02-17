@@ -1,0 +1,47 @@
+<!--用户信息项-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+      <text class="userinfo-nickname">昵称：{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<!-- 卡片 -->
+<view class="card">
+  <navigator class="card-item">
+    <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/储藏.svg"></image>
+    <text>我的课程</text>
+  </navigator>
+  <navigator class="card-item">
+    <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/订单.svg"></image>
+    <text>我的订单</text>
+  </navigator>
+  <navigator class="card-item">
+    <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/上传.svg"></image>
+    <text>我的上传</text>
+  </navigator>
+</view>
+
+<!-- 用户列表项 -->
+<view class= "userItemListView">
+    <navigator url="/pages/my/message/message">
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/消息.svg"></image>
+        <text>消息</text>
+        <view class= "arrow"></view>
+    </navigator>
+    <navigator url="/pages/my/collection/collection">
+      <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/推荐.svg"></image>
+        <text>我的收藏</text>
+        <view class= "arrow"></view>
+    </navigator>
+    <navigator url="/pages/my/about/about?">
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/证件.svg"></image>
+        <text>关于我们</text>
+        <view class= "arrow"></view>
+    </navigator>
+</view>

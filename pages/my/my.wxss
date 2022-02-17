@@ -1,0 +1,106 @@
+/* 用户信息样式 */
+.container{
+    background-color: #DB4D6D;
+    padding: 30rpx 0 40rpx;
+    height: 350rpx;
+}
+button{
+    top: 100rpx;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar{
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname{
+    color: white;
+}
+
+/* 卡片样式 */
+.card {
+    width: 94%;
+    margin-left: 3%;
+    height: 180rpx;
+    background: #fff;
+    border-radius: 28rpx;
+    box-shadow: 0 5px 5px #cdcfcf;
+    margin-top: -50rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+.card image{
+    width: 33%;
+    height: 100rpx;
+    border: gray;
+}
+.card navigator{
+    width: 33%;
+    padding: 10rpx;
+    margin: 10rpx;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 32rpx;
+    align-items: center;
+}
+/* 用户列表样式 */
+.userItemListView{
+    background: #fff;
+    width: 90%;
+    margin: 24rpx 0;
+    padding: 0 38rpx;
+}
+.userItemListView image{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 10rpx;
+}
+.userItemListView navigator{
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #f1f1f1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.userItemListView > navigator:last-child{
+    border: none;
+}
+.arrow{
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #999;
+    border-right: 4rpx solid #999;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 30rpx;
+    top: 38rpx;
+}
+.userItemListView text{
+    font-size: 28rpx;
+}
+
+.container image{
+    margin-left: 50rpx;
+    margin-right: auto;
+    width: 150rpx;
+    height: 150rpx;
+    border: 5rpx solid #E87A90;
+}
+.container text{
+    font-size: 36rpx;
+    margin-right: auto;
+    margin-left: 20rpx;
+}

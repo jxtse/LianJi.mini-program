@@ -1,0 +1,36 @@
+<!--地图-->
+<map 
+id="map"
+scale="4"
+style="width: 100%; height: 1600rpx"
+latitude="{{latitude}}"
+longitude="{{longitude}}"
+markers="{{markers}}"
+bindcallouttap="opendetail"
+bindmarkertap="showModal">
+
+<text class="title">非遗探索</text>
+ <!--屏幕背景变暗的背景  -->
+ <cover-view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></cover-view>
+    <!--弹出框  -->
+    <cover-view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+      <cover-view class='placeBox'>
+        <cover-view class='placeViewLt'>
+          <cover-view class='viewTitle'>{{myall.name}}</cover-view>
+          <cover-view class='viewDis'>{{myall.address}}</cover-view>
+          <cover-view class='viewAddr'>{{myall.type}}</cover-view>
+        </cover-view>
+        <cover-view class='placeViewRt'>
+          <cover-image class="itemshow" bindtap="opendetail" src='{{myall.image}}'></cover-image>
+        </cover-view>
+      </cover-view>
+      
+      <cover-view class='viewIcon'>
+        <cover-view class='timeText' bindtap="opendetail">点击进入详情页</cover-view>
+        <cover-image class='indexIcon1' src='cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/讨论.png' bindtap='calling'></cover-image>
+        <cover-view class='timeText1' bindtap='calling'>讨论</cover-view>
+        <cover-image class='indexIcon2' src='cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/发现.png'></cover-image>
+        <cover-view class='timeText1'>分享</cover-view>
+      </cover-view>
+    </cover-view>
+</map>

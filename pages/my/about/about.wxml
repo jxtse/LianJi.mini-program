@@ -1,0 +1,18 @@
+<!--关于&帮助界面-->
+
+ <view class="who">
+    我们是一群北京交通大学的本科生，因为想要传播非遗文化，为社会尽自己的一份微薄之力，我们共同开发了这款小程序，大家在使用过程中有任何意见和建议都迎随时与我们联系，我们会不断完善这款小程序
+ </view>
+
+
+
+<text class="contact1" user-select>
+    如果对我们有什么疑惑或者对我们的产品有什么建议的话，把你想说的告诉我们~
+</text>
+<text class="contact2" user-select>
+    邮箱：jxTse@outlook.com
+    微博：bjtu-理学2102
+    微信公众号：bjtu理学2102
+</text>
+
+

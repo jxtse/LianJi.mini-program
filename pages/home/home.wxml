@@ -1,0 +1,87 @@
+<!-- 搜索栏 -->
+<view class="search">
+    <input class="ipt" type="text" placeholder="请输入关键字" bindinput="getInputValue" bindconfirm="search"/>
+    <view class="searchButton" bindtap="search">
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/搜索.png"></image>
+    </view>
+</view>
+<block wx:if="{{searched}}">
+    <view class="searchRes">
+        <navigator url="/pages/details/details?id={{searchRes[0].id}}">
+            <text>{{searchRes[0].name}}  {{searchRes[0].address}}</text>
+        </navigator>
+        <navigator url="/pages/details/details?id={{searchRes[1].id}}">
+            <text>{{searchRes[1].name}}  {{searchRes[1].address}}</text>
+        </navigator>
+        <navigator url="/pages/details/details?id={{searchRes[2].id}}">
+            <text>{{searchRes[2].name}}  {{searchRes[2].address}}</text>
+        </navigator>
+        <navigator url="/pages/details/details?id={{searchRes[3].id}}">
+            <text>{{searchRes[3].name}}  {{searchRes[3].address}}</text>
+        </navigator>
+        <navigator url="/pages/details/details?id={{searchRes[4].id}}">
+            <text>{{searchRes[4].name}}  {{searchRes[4].address}}</text>
+        </navigator>
+    </view>
+</block>
+
+<!-- 轮播图 -->
+<swiper class="swiper-container" indicator-dots  circular autoplay="true" previous-margin="20rpx">
+    <!--第一个轮播图-->
+    <swiper-item>
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/首页轮播图/8aa84ec56535ad64db5b199ee138120c.jpg" ></image>
+    </swiper-item>
+    <!--第二个轮播图-->
+    <swiper-item>
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/首页轮播图/mmexport1643905369797-04.jpeg"></image>
+    </swiper-item>
+    <!--第三个轮播图-->
+    <swiper-item>
+        <image src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/首页轮播图/442767a8ceddd7570804c7d0198e377e.jpg"></image>
+    </swiper-item>
+</swiper>
+
+<!-- 分类滑动模块 -->
+<view class="major">
+    <view class="majorCon">
+        <!-- 第一个分类 -->
+        <navigator class="box" url="">
+            <image class="pic" src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/专业分类导航/储藏.png"></image>
+            <view class="txt">分类</view>
+        </navigator>
+        <!-- 第二个分类 -->
+        <navigator class="box" url="">
+            <image class="pic" src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/专业分类导航/电影.png"></image>
+            <view class="txt">上传视频</view>
+        </navigator>
+        <!-- 第三个分类 -->
+        <navigator class="box" url="">
+            <image class="pic" src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/专业分类导航/拍照.png"></image>
+            <view class="txt">上传照片</view>
+        </navigator>
+        <!-- 第四个分类 -->
+        <navigator class="box" url="">
+            <image class="pic" src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/专业分类导航/音乐.png"></image>
+            <view class="txt">上传音乐</view>
+        </navigator>
+        <!-- 第五个分类 -->
+        <navigator class="box" url="">
+            <image class="pic" src="cloud://ac-project-6g67t2s1787ec30f.6163-ac-project-6g67t2s1787ec30f-1309467775/图标库/专业分类导航/概率.png"></image>
+            <view class="txt">随机一下</view>
+        </navigator>
+    </view>
+</view>
+
+<!-- 卡片信息展示 -->
+<block class="card">
+    <view class="c-item" wx:for="{{dataList}}" wx:key="id" bindtap="opendetail">
+        <view class="c-images">
+            <image src="{{item.image}}"></image>
+        </view>
+        <view class="info">
+            <view class="viewTitle">名称：{{item.name}}</view>
+            <view class="viewDis">位置：{{item.address}}</view>
+            <view class="viewDis">类别：{{item.type}}</view>
+        </view>
+    </view>
+</block>

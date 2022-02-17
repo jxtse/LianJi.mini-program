@@ -1,0 +1,18 @@
+/* pages/about/about.wxss */
+.who{
+    padding: 10rpx;
+    margin: 10rpx;
+    font-size: 36rpx;
+}
+
+text{
+    padding: 10rpx;
+    margin: auto;
+}
+
+.contact1{
+    font-size: 36rpx;
+}
+.contact2{
+    font-size: 48rpx;
+}
