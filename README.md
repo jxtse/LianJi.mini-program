@@ -4,7 +4,9 @@
 
 
 # Description
-四⽅--基于助⼒国家软实⼒提升背景下关于⾮遗宣传程序的开发(以下简称: 四⽅)是⼀个正在开发的创业项⽬，该项⽬基于微信⼩程序技术，旨在为⾮物质 ⽂化遗产兴趣者们搭建平台，传播⾮遗⽂化，助⼒乡村振兴。
+Si Fang — a startup project currently under development, aimed at promoting intangible cultural heritage (hereinafter referred to as "Si Fang"), is based on WeChat mini-program technology. It is designed to build a platform for enthusiasts of intangible cultural heritage, to disseminate this heritage, and to contribute to the revitalization of rural areas.
+ 
+四⽅——基于助⼒国家软实⼒提升背景下关于⾮遗宣传程序的开发（以下简称: 四⽅）是⼀个正在开发的创业项⽬，该项⽬基于微信⼩程序技术，旨在为⾮物质⽂化遗产兴趣者们搭建平台，传播⾮遗⽂化，助⼒乡村振兴。
 
 # Features
 四方项目是一个创新的创业项目，它专注于非物质文化遗产（非遗）的宣传和推广。以下是该项目的几个关键特征：
